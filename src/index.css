@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Montserrat";
+  user-select: none;
+
+  /* Dark theme colors */
+  --primary-dark: #0E1F3B;
+  --secondary-dark: #377D99 ;
+  --accent-dark: #E65A50;
+  --background-dark: #1C1C1C;
+  --text-dark: #E0E0E0;
+  --success-dark: #28a745; /* Success color for dark theme */
+
+  /* Light theme colors */
+  --primary-light: #1F3B4D;
+  --secondary-light: #4A90E2;
+  --accent-light: #FF6F61;
+  --background-light: #FFFFFF;
+  --text-light: #333333;
+  --success-light: #28a745; /* Success color for light theme */
+}
+
+/* You can also create variables for current theme's success color */
+.dark {
+  --primary-color: var(--primary-dark);
+  --secondary-color: var(--secondary-dark);
+  --accent-color: var(--accent-dark);
+  --background-color: var(--background-dark);
+  --text-color: var(--text-dark);
+  --success-color: var(--success-dark); /* Success color for dark mode */
+}
+
+:root {
+  --primary-color: var(--primary-light);
+  --secondary-color: var(--secondary-light);
+  --accent-color: var(--accent-light);
+  --background-color: var(--background-light);
+  --text-color: var(--text-light);
+  --success-color: var(--success-light); /* Success color for light mode */
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #226276;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #377D99;
+}
+
