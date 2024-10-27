@@ -1,9 +1,10 @@
 {
     "rewrites": [
-        {
-            "src": "/(.*)",
-            "destination": "/"
-        }
+      {
+        "source": "/(.*)",
+        "destination": "/"
+      }
     ],
     "buildCommand": "npm run build"
-}
+  }
+  
