@@ -1,0 +1,1 @@
+import{B as s}from"./index-BdNT52md.js";const r={position:"top-right",autoClose:5e3,hideProgressBar:!1,closeOnClick:!0,pauseOnHover:!0,draggable:!0,progress:void 0},t=o=>{s.success(o,r)},a=o=>{s.error(o||"Something Went Wrong!",r)};export{a,t as s};
